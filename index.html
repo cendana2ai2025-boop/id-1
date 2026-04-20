@@ -3,38 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Developer Profile</title>
+<title>Developer Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>My Developer Profile</h1>
+<header class="navbar">
+  <h2>DevPortfolio</h2>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="privacy.html">Privacy Policy</a>
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="privacy.html">Privacy</a>
     <a href="terms.html">Terms</a>
+    <button onclick="toggleDarkMode()">🌙</button>
   </nav>
 </header>
 
-<section class="container">
-  <h2>Hello, I'm Developer 👋</h2>
-  <p>I build Android apps, web tools, and automation systems.</p>
+<section id="home" class="hero">
+  <h1>Hello, I'm a Developer 🚀</h1>
+  <p>Building apps, automation tools, and modern web systems</p>
+</section>
 
-  <h3>Skills</h3>
-  <ul>
-    <li>Android Development</li>
-    <li>Web Development</li>
-    <li>API Integration</li>
-  </ul>
+<section id="projects" class="container">
+  <h2>My Projects</h2>
 
-  <h3>Contact</h3>
-  <p>Email: your@email.com</p>
+  <div class="card">
+    <h3>Android App</h3>
+    <p>Music player with backup & restore system</p>
+  </div>
+
+  <div class="card">
+    <h3>Web Scraper Tool</h3>
+    <p>Advanced scraping with AI detection bypass</p>
+  </div>
+
 </section>
 
 <footer>
-  <p>© 2026 Developer</p>
+  <p>© 2026 Developer | All Rights Reserved</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
